@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <main style="justify-content: center; text-align: center; align-items: center">
+      <section>
+        <div class="icon-container">
+          <div class="icon-box about" data-modal="about">
+            <i class="fa-regular fa-address-card"></i>
+          </div>
+          <div class="icon-box projects" data-modal="projects">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <div class="icon-box testimonial" data-modal="socials">
+            <i class="fa-solid fa-users-rectangle"></i>
+          </div>
+          <div class="icon-box contact" data-modal="contact">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+        </div>
+      </section>
+
+      <div class="popup" id="about">
+        <div class="popup-container">
+          <div class="popup-header">
+            <div class="button-container">
+              <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+              </button>
+              <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+          </div>
+          <div class="popup-body about-container">
+            <div class="img-frame">
+              <img src="mypfp.jpg" alt="Profile Picture" />
+            </div>
+            <div class="hero-content">
+              <h1>Kritika Srivastava</h1>
+              <p>
+                I am a B.Tech Computer Science (AIML) student from PSIT, set to
+                graduate in 2026. Over the course of my studies, I have honed
+                skills in various technologies including HTML, CSS, JavaScript, 
+                Node.js, C++, Python, C, MySQL. I am actively seeking a software 
+                engineering position where I can continue sharpening my skills, 
+                contribute to impactful projects, and grow alongside the company 
+                for mutual benefit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="projects">
+        <div class="popup-container">
+          <div class="popup-header">
+            <div class="button-container">
+              <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+              </button>
+              <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="popup-body">
+            <div class="skill-list">
+              <h1>Skills</h1>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>MySQL</li>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+                <li>Git/Github</li>
+              </ul>
+            </div>
+
+            <div class="project-container">
+              <h1>Projects</h1>
+              <div class="all-projects">
+                <div class="project-box">
+                  <img src="twitter.png" alt="Twitter Clone" />
+                  <div class="overlay">
+                    <h3>twitter-clone</h3>
+                    <button class="more-btn">
+                      <a href="https://github.com/Kritisri02/twitter-clone">
+                        <span>Learn More</span>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="project-box">
+                  <img src="password.png" alt="Password Manager" />
+                  <div class="overlay">
+                    <h3>Password Manager</h3>
+                    <button class="more-btn">
+                      <a href="https://github.com/Kritisri02/passwordmanager">
+                        <span>Learn More</span>
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="socials">
+        <div class="popup-container">
+          <div class="popup-header">
+            <div class="button-container">
+              <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+              </button>
+              <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+          </div>
+          <div class="popup-body testimonial-container socials-container">
+            <h1>Socials</h1>
+            <div class="socials">
+              <div class="socials-item">
+                <a
+                  href="https://www.linkedin.com/in/kritikasrivastava00"
+                  class="socials-item-icon socials-item-icon__linkedin"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+              <div class="socials-item">
+                <a
+                  href="https://x.com/Kritikasri_"
+                  class="socials-item-icon socials-item-icon__twitter"
+                  target="_blank"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div class="socials-item">
+                <a
+                  href="https://github.com/KritiSri02"
+                  class="socials-item-icon socials-item-icon__github"
+                  target="_blank"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="contact">
+        <div class="popup-container">
+          <div class="popup-header">
+            <div class="button-container">
+              <button class="close-btn circle-btn red">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="close-btn circle-btn yellow">
+                <i class="fa-solid fa-window-minimize"></i>
+              </button>
+              <button class="maximize-btn circle-btn green">
+                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+              </button>
+            </div>
+          </div>
+          <div class="popup-body contact-container">
+            <h1>Contact</h1>
+            <p>Hi there, you can contact with me via email.</p>
+            <form id="contact-form" onsubmit="return openEmailApp(event)">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name.."
+                required
+              />
+
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Your mail.."
+                required
+              />
+
+              <label for="subject">Subject</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Write something.."
+                style="height: 200px"
+              ></textarea>
+
+              <button class="submit-btn more-btn" type="submit">
+                <span>Submit <i class="fa-solid fa-paper-plane"></i></span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      function openEmailApp(event) {
+        event.preventDefault(); // Prevent form from actually submitting
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+
+        const mailtoLink = `mailto:2k22.csaiml.2213662@gmail.com?subject=Contact from ${encodeURIComponent(
+          name
+        )}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(
+          email
+        )}%0AMessage: ${encodeURIComponent(subject)}`;
+
+        window.location.href = mailtoLink;
+      }
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
